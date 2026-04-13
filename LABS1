@@ -1,0 +1,29 @@
+import time
+
+def rainbow_logic_check():
+    rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+    target = "green" # The middle color
+    
+    print("🌈 --- RAINBOW COLOR COLLABORATOR --- 🌈")
+    time.sleep(0.5)
+    print("Collaborator: I am thinking of a specific color in the rainbow.")
+    print("Collaborator: It is located exactly in the middle (the 4th color).")
+    
+    while True:
+        color_input = input("\nCollaborator: What is your guess? ").strip().lower()
+        
+        print(f"Collaborator: Comparing '{color_input}' to the spectrum...")
+        time.sleep(1)
+        
+        if color_input == target:
+            print(f"Collaborator: ✅ CORRECT! {color_input.capitalize()} is the middle color.")
+            print("Collaborator: Logic check passed. You know your colors!")
+            break
+        elif color_input in rainbow:
+            print(f"Collaborator: ❌ No, '{color_input}' is in the rainbow, but it's not in the middle.")
+            print("Collaborator: Hint: It's the color of a lime or a leaf.")
+        else:
+            print("Collaborator: ❌ That isn't even a color in the standard rainbow!")
+
+# Run the second scenario
+rainbow_logic_check()
