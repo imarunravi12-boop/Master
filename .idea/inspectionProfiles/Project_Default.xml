@@ -2,6 +2,9 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d6a8c117a629921ee0acd71255e6fd69777f31a1
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
@@ -12,8 +15,11 @@
         </value>
       </option>
     </inspection_tool>
+<<<<<<< HEAD
 =======
     <inspection_tool class="CyclomaticComplexityInspection" enabled="true" level="WARNING" enabled_by_default="true" />
 >>>>>>> 61b1ac2 (Initial commit)
+=======
+>>>>>>> d6a8c117a629921ee0acd71255e6fd69777f31a1
   </profile>
 </component>

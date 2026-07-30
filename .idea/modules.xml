@@ -3,10 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Interview python.iml" filepath="$PROJECT_DIR$/.idea/Interview python.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/.idea/Playwright-test.iml" filepath="$PROJECT_DIR$/.idea/Playwright-test.iml" />
 >>>>>>> 61b1ac2 (Initial commit)
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Interview python.iml" filepath="$PROJECT_DIR$/.idea/Interview python.iml" />
+>>>>>>> d6a8c117a629921ee0acd71255e6fd69777f31a1
     </modules>
   </component>
 </project>
