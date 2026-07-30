@@ -1,0 +1,92 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - alert [ref=e3]:
+      - generic "Maintenance Notification" [ref=e4]:
+        - img [ref=e5]
+      - generic [ref=e6]: "Reminder: Sign-in to the support portal is required for case submission"
+      - button "Close" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+        - generic [ref=e10]: Close
+    - generic [ref=e13]:
+      - generic [ref=e15]:
+        - paragraph [ref=e19]:
+          - link [ref=e20] [cursor=pointer]:
+            - /url: /s/
+        - generic [ref=e22]:
+          - paragraph [ref=e24]: Sign In to Support Center
+          - generic [ref=e25]:
+            - generic [ref=e26]: Username
+            - generic [ref=e27]:
+              - generic [ref=e28]: Email
+              - textbox "Email" [ref=e29]: imarunravi12@gmail.com
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - generic [ref=e32]: Password
+              - link "Forgot your password?" [ref=e35] [cursor=pointer]:
+                - /url: https://support.saucelabs.com/s/login/ForgotPassword
+            - generic [ref=e36]:
+              - textbox [ref=e42]:
+                - /placeholder: Password
+                - text: admin@123
+              - button [active] [ref=e43] [cursor=pointer]:
+                - generic [ref=e44]:
+                  - img
+          - button "Log in" [ref=e46] [cursor=pointer]:
+            - generic [ref=e47]: Log in
+          - generic [ref=e51]: or sign in with
+          - generic [ref=e55]:
+            - text: Don't have an account?
+            - link "Sign Up" [ref=e56] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/login/SelfRegister
+              - generic [ref=e57]: Sign Up
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "Facebook" [ref=e61] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - img "Facebook" [ref=e62]
+          - listitem [ref=e63]:
+            - link "Gmail" [ref=e64] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - img "Gmail" [ref=e65]
+      - generic [ref=e70]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e72]
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure." [ref=e75] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Could-not-start-a-new-session-Possible-causes-are-invalid-address-of-the-remote-server-or-browser-start-up-failure
+          - listitem [ref=e76]:
+            - link "Sub-account Unable to Accept Invitation to Join Sauce Labs" [ref=e77] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Sub-account-Unable-to-Accept-Invitation-to-Join-Sauce-Labs
+          - listitem [ref=e78]:
+            - link "Unable to Reach Application on localhost for Tests Run on Safari 8 and 9, and Edge" [ref=e79] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Unable-to-Reach-Application-on-localhost-for-Tests-Run-on-Safari-8-and-9-and-Edge
+          - listitem [ref=e80]:
+            - link "Using large Android apps on Emulators" [ref=e81] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Using-large-Android-apps-on-Emulators
+          - listitem [ref=e82]:
+            - link "Having issues with sendKeys on a React app on a Real Device?" [ref=e83] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Having-issues-with-sendKeys-on-a-React-app-on-a-Real-Device
+          - listitem [ref=e84]:
+            - 'link "Error: \"The file signature is not equal to the expected ZIP archive signature ''PK''\" when running native applications on Appium with Sauce Storage" [ref=e85] [cursor=pointer]':
+              - /url: https://support.saucelabs.com/s/article/Error-The-file-signature-is-not-equal-to-the-expected-ZIP-archive-signature-PK-when-running-native-applications-on-Appium-with-Sauce-Storage
+          - listitem [ref=e86]:
+            - link "Unable to access UI elements, record video or take screenshots during Android Native Application tests on Real Devices and Emulators" [ref=e87] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Unable-to-access-UI-elements-record-video-or-take-screenshots-during-Android-Native-Application-tests-on-Real-Devices-and-Emulators
+          - listitem [ref=e88]:
+            - link "Android Emulator app test failing with the error \"The Sauce VMs failed to start the browser or device\"" [ref=e89] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Android-Emulator-app-test-failing-with-the-error-The-Sauce-VMs-failed-to-start-the-browser-or-device
+          - listitem [ref=e90]:
+            - link "Biometric authentication support on SauceLabs Virtual and Real Mobile Devices" [ref=e91] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Biometric-authentication-support-on-SauceLabs-Virtual-and-Real-Mobile-Devices
+          - listitem [ref=e92]:
+            - link "Using Sauce Application Storage with Postman" [ref=e93] [cursor=pointer]:
+              - /url: https://support.saucelabs.com/s/article/Using-Sauce-Application-Storage-with-Postman
+    - generic [ref=e98]: © 2026 Sauce Labs Inc.All rights reserved.
+  - generic [ref=e99]: Login
+  - button "Open Sauce Labs Support Agent" [ref=e104] [cursor=pointer]:
+    - img [ref=e106]
+    - img [ref=e110]
+```

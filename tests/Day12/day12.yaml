@@ -1,0 +1,36 @@
+
+- Saleforce API with Postman
+- API Integration with Playwright (service now only post,get,patch)
+- End to End Scenario
+
+
+
+
+Client id :"3MVG9rZjd7MXFdLhTFd7jYNtTiu5DzDqdNCte5DvFnv7tbIspjQ9CGPizYGUq7h6T69VSmfqxT9yY2NS7tz84",
+Client secret id : "09FE1EF4BDD93B17821073243A441F8A780A639C21D925B575C1112A3F5E0DBE"
+
+
+"instance_url": "https://orgfarm-6d28dcc693-dev-ed.develop.my.salesforce.com",
+ "token_type": "Bearer",
+
+API Testing:
+API doc  
+uri -> endpoint
+parameters -> query parameters, path parameters, headers, body
+methods -> GET, POST, PUT, PATCH, 
+pay load -> body
+Auth Deatils
+headers
+Respone code
+Status code
+Response body
+
+-> Page fixtures{page}
+const browsers = await Browser Type.launch()
+const context = await browser.newContext()
+const page = await context.newPage()
+const request = await page.request -> APIRequestContext
+
+
+1. what is Page fixture?
+Page fixture is used to perform operations on a web page. It provides methods to interact with web.

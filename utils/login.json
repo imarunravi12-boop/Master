@@ -1,0 +1,19 @@
+[
+{
+
+   "Tcase": "Login with valid credentials",
+    "Username": "dilipkumar.rajendran@testleaf.com",
+    "Password": "Testleaf@2025"
+
+
+},
+
+{
+
+    "Tcase1": "Login with invalid credentials",
+     "Username": "dilipkumar.rajendran@testleaf.c",
+     "Password": "Testleaf@2025"
+
+
+}
+]

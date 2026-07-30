@@ -1,0 +1,76 @@
+agenda
+
+API introduction
+headers
+API with Postman
+
+1. why is API Automation growing demand?
+  API Based apps
+  Faster execution
+  Less flaky
+  Integration with UI tests
+  CI/CD integration
+  Early Bug detection
+  Less failures
+  Data Generation
+  Parallel Execution
+  Performance Testing
+
+2. SOAP vs REST vs GraphQL vs gRPC
+
+SOAP - Simple Object Access Protocol
+  XML based
+  Standardized protocol
+  WS-Security
+  More Overhead
+  Stateful operations
+
+REST - Representational State Transfer
+  JSON/XML
+  Stateless operations
+  Lightweight 
+GraphQL - Graphical Query Language
+  Single endpoint
+  Client specified queries
+  Flexible data retrieval
+  Strongly typed schema
+gRPC - Google Remote Procedure Call
+  High performance
+  Protocol Buffers
+  Bi-directional streaming
+  Strongly typed contracts
+
+3. Different Between URL and URI?
+URL (Uniform Resource Locator)
+  Specifies the location of a resource on the internet
+  Includes protocol, domain, path, and query parameters
+URI (Uniform Resource Identifier)
+  A broader term that identifies a resource either by location, name, or both
+  Can be a URL or a URN (Uniform Resource Name)
+
+Http Methods:
+POST - Create a New resource
+uri,auth,body,req body,headers - 201 Created
+
+GET - Read a resource
+uri,auth,headers - 200 OK
+
+PUT - Update/Replace a resource
+uri,auth,body,req body,headers - 200 OK
+
+PATCH - Update/Modify a resource
+uri,auth,body,req body,headers - 200 OK
+
+DELETE - Delete a resource    
+uri,auth,headers - 204 No Content
+Delete request does not have response body
+
+
+400 - bad request
+401 - unauthorized  
+403 - forbidden
+404 - not found
+500 - internal server error
+502 - bad gateway
+503 - service unavailable
+504 - gateway timeout

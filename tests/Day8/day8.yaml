@@ -1,0 +1,46 @@
+ - Frame
+ - Window Handling
+ - Alerts Handling
+
+1.what is the Frame?
+  A Frame is an HTML document embedded inside another HTML document on a website. The <iframe> tag is used to create frames in HTML. Frames are commonly used to embed content from another source, such as videos, advertisements, or interactive elements, within a webpage.
+ 
+2.How to handle Frame in Playwright?
+  In Playwright, you can handle frames using the `frame` method to access a specific frame within a page. You can then interact with elements inside that frame just like you would with the main page. Here's an example of how to handle frames in Playwright:
+  ```typescript
+  const frame = page.frame({ name: 'frameName' }); // Access frame by name
+  await frame.click('selector'); // Interact with elements inside the frame
+  ```
+3.What is Window Handling?
+  Window handling refers to the ability to manage multiple browser windows or tabs within a web automation context.
+  This includes switching between different windows, closing windows, and performing actions in specific windows.
+4.How to handle Window in Playwright?
+   In Playwright, you can handle multiple windows or tabs using the `context` and `page` objects. You can listen for new pages (windows/tabs) and switch between them as needed. Here's an example:
+    ```typescript
+    const [newPage] = await Promise.all([
+        context.waitForEvent('page'), // Wait for a new page to open
+        page.click('selector') // Action that opens a new window/tab
+    ]);
+    await newPage.bringToFront(); // Switch to the new page
+    ```
+5.What is Alert Handling?
+  Alert handling refers to the process of managing JavaScript alert dialogs that appear on web pages. 
+  These alerts can be simple alert boxes, confirmation dialogs, or prompt dialogs that require user interaction.   
+
+6.How to handle Alerts in Playwright?
+  In Playwright, you can handle alerts using the `page.on('dialog', callback)` event listener. 
+  This allows you to listen for dialog events and respond accordingly. Here's an example:
+  ```typescript
+  page.on('dialog', async (dialog) => {
+      console.log(dialog.message()); // Log the alert message
+      await dialog.accept(); // Accept the alert
+  });
+  await page.click('selector'); // Action that triggers the alert
+  ```
+7.What is the difference between Frame, Window Handling, and Alert Handling?
+ - Frame handling deals with interacting with embedded HTML documents within a webpage.
+ - Window handling involves managing multiple browser windows or tabs, allowing for switching and interaction between them.
+ - Alert handling focuses on managing JavaScript alert dialogs that require user interaction, such as accepting or dismissing alerts.
+ 
+windows handling ?
+

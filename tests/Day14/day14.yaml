@@ -1,0 +1,125 @@
+polymorphism
+Abstraction
+Custom fixture 
+Page Object Model
+
+Polymorphism:
+
+2 type Polymorphism:
+
+1. Method Overloading -> complie poly
+2. Method Overriding  ->  Run Poly 
+
+Method Overloading:
+Inside the same class we can create multliple method with same method name ,but different parameter should be passed.
+
+ElementClick(Locator:string):void
+ElementClick(Locator:string,ForceClick:boolean):void
+
+ElementClick(Locator:string,ForceClick?:boolean){
+if(ForceClick==true){
+console.log(Click with force)}
+else{
+console.log(Click Normally)}
+}
+
+Typescript cant able to create mutliple methods.
+
+Method Overriding:
+use method Overriding -> inheritance
+connect between two different class with same method signture and parents methods only
+implemention can change
+
+export class parent{
+
+phone(){
+console.log('iphone 15')}
+}
+}
+//object child -> iphone 15
+
+Abstraction:
+process of hiding implemention deatils and showing only essential features
+
+1.Abstract class
+2.interface
+
+Abstract class -> 0 to 100 % Abstract method 
+it both have implemention and unimplemention
+lanuch(){
+// implemention method 
+}
+loadurl():void // unimplemention method 
+
+
+interface:
+100 % Abstract method
+username():void
+password():void
+
+============================
+fixture:
+{page} -> page fixture -> browser -> context -> page
+{context} -> context fixture
+-> can be shared across mutliple tests
+-> setup -> use in test -> teardown
+
+Custom fixture:
+use defined fixture
+textfile using test extend[]
+
+
+const br =await Chromium.lanuch()
+const cont=await br.newContext()
+const page=await cont.newPage()
+await.page.goto("url")
+
+test("login",async({page})=>{
+await.page.goto("url")
+
+})
+
+=========================
+Desigh Pattern
+Page Object Model
+based on the webpage
+
+Loginpage:
+*username
+*password
+*ClickOnloginpage
+
+Welcomepage:
+*Click On crmsfa
+*Logout
+
+Myhomepage:
+*Leads
+*Accounts
+*cases
+
+MyLeadpages:
+*CreateLead - Click
+
+
+CreateLead:
+*Cname
+*Lname
+*Fname
+
+ViewLead:
+*verify
+
+MyAccountpage:
+*CraeteAccount
+
+Accountpage:
+*AccountName
+
+POM:
+*Organizing the code
+*Improve Readability
+*Easy Maintance
+*Increased pre
+*Reusaility 
+

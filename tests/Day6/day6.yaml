@@ -1,0 +1,48 @@
+
+Playwright Locators:
+- get_by_role - text ,button, link, checkbox, radio, etc.
+- get_by_placeholder - for input placeholders
+- get_by_label - for form labels
+- get_by_text - for exact text match
+- get_by_title - for title attribute
+- get_by_alt_text - for images
+- get_by_test_id
+- get_by_class
+
+
+Playwright Assertions:
+Assertion is a checkpoint in the test to verify that the UI or application behavior is correct.
+
+Types:
+1. Auto-retry
+2. Non-retry
+3. soft
+4. hard
+
+Assertion Types:
+Genernic type
+locators type
+page type
+Api Assertion type
+Negating Assertions
+
+
+
+# install command Ts: 
+# install Terminal or Command Prompt:
+
+npm install -g typescript
+
+# Check installation:
+tsc -v
+
+# To compile TS file to JS file:
+tsc filename.ts to compile the TS file to JS file
+# To run the JS file:
+node filename.js to run the JS file
+# To compile and run in one command use:
+ts-node filename.ts
+# To install ts-node use:
+npm install -g ts-node
+
+

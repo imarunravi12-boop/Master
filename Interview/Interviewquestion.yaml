@@ -1,0 +1,7 @@
+1. How to count 20 matching elements?
+2. How to handle Frames (iframes)?
+3. Hybrid Method: UI Login + API Data Entry fill name and age ?
+4. How to handle Alerts (Auto dismiss, accept, prompt and confirm)?
+5. Handle iframes
+6. Switch to the 2nd window and perform some action in playwright ? 
+7.In an e-commerce application like Amazon, how will you validate that when a user searches for "iPhone", all the products displayed in the results are relevant to the search keyword using Playwright?

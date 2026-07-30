@@ -1,0 +1,101 @@
+Agenda :
+
+1. Codegen.
+2. Allure Report.
+3. MCP server.
+
+--------------------------
+
+1. Codegen (Playwright Code Generator),
+
+What it is:
+A tool in Playwright that automatically generates test scripts based on my actions on the browser.
+
+Why it's useful:
+I don't need to write code manually. Just click, type, or navigate — Playwright writes the code for you.
+
+How it works:
+
+Run: npx playwright codegen
+
+A browser opens.
+
+Whatever actions you perform, Playwright converts them into code in JavaScript/TypeScript/Python.
+
+Simple example:
+You click a login button → Playwright generates:
+
+await page.click('#login');
+
+---------------------------------------------------
+
+Start Codegen from VS Code (Easiest Way)
+
+Method A: Using Command Palette
+--------------------------------
+
+Press Ctrl + Shift + P
+
+Type: Playwright: Record New Test
+
+Select it → Codegen window opens
+
+Method B: Right-click testing icon in VS code
+----------------------------------------------
+
+1. Click the testing icon in the right panel.
+
+2. Choose: "Record New"
+
+3. VS Code opens a browser + side panel
+
+It starts generating code automatically
+
+---------------------------------
+
+2. Allure Report (Test Reporting Tool) :
+
+What it is:
+A beautiful reporting tool used to display Playwright test results in a clean and interactive dashboard.
+
+Why it's useful:
+
+Shows passed/failed tests
+
+Shows screenshots, steps, logs
+
+Helps understand why a test failed
+
+Easy to share with team
+
+How it works with Playwright follow below steps:
+
+Commands for Allure Reports:
+---------------------------
+In the configuration make below changes:
+reporter: [['html'], ['allure-playwright']],
+
+And execute below commands in the terminal :
+
+1. npm i -D allure-playwright
+
+2. npm i -g allure-commandline --save-dev
+
+3. Execute the file for which the report has to be generated using the command : 
+npx playwright test filename.spec.ts
+
+4. Use command : " allure serve " to generate the allure report.
+
+---------------------------------------------------
+
+3. MCP Server (Model Context Protocol Server)
+
+What it is:
+A system that allows tools, scripts, databases, or automation frameworks (like Playwright) to connect with AI agents such as ChatGPT.
+
+Think of it like:
+A bridge that lets ChatGPT access real tools and run actions safely.
+
+Simple explanation:
+MCP server =
+A middleman that connects your local tools (like Playwright, OS commands, files) with an AI assistant(co-pilot) so the AI can help automate tasks.

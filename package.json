@@ -1,0 +1,25 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^24.5.2",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.4.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.3",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.22.3"
+  }
+}

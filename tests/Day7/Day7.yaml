@@ -1,0 +1,65 @@
+1. what is TypeScript? why use it? playwright Automation with TypeScript
+   TypeScript finds errors during compile time
+   TypeScript is a superset of JavaScript that adds static types.
+   TypeScript find bug
+
+2. What is JavaScript? why use it? playwright Automation with JavaScript?
+    JavaScript is Dynamic programming language that is used for web development.
+    JavaScript finds errors during runtime.
+    JavaScript is interpreted language.
+
+
+3. Difference between TypeScript and JavaScript?
+    TypeScript is statically typed language whereas JavaScript is dynamically typed language.
+    TypeScript finds errors during compile time whereas JavaScript finds errors during runtime.
+    TypeScript is a superset of JavaScript.
+
+
+- TypeScript
+- Arrays
+- Alerts
+
+union & intersection types in TypeScript
+
+union - OR
+intersection - AND
+
+let status: string|number;
+status = 200
+status = "created"
+
+
+// Array methods
+1.push - Adds a new item to the end of the array
+2.pop - Removes the last item from the array
+3.shift - Removes the first item from the array
+4.unshift - Adds a new item to the beginning of the array
+5.slice - Returns a portion of the array
+6.splice - Adds or removes items from the array
+
+
+Alerts in TypeScript
+1.alert() - Displays an alert box with a specified message and an OK button.
+2.confirm() - Displays a dialog box with a specified message, along with OK and Cancel buttons.
+3.prompt() - Displays a dialog box that prompts the user for input.
+4.console.log() - Outputs a message to the web console.
+
+Model Alerts in Playwright
+1.simple alert
+2.confirm alert
+3.prompt alert
+
+Non Model Alerts in Playwright
+1.sweet alerts
+2.toasts    
+
+
+Action Allowed in Playwright Alerts Handling
+dialog.accept() - Accepts the alert dialog.
+dialog.dismiss() - Dismisses the alert dialog.
+dialog.message() - Retrieves the message displayed in the alert dialog.
+dialog.accept('text') - Accepts the prompt dialog with the specified text input.
+dialog.type() - Retrieves the type of the alert dialog (e.g., alert, confirm, prompt)
+
+
+

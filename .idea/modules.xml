@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/Interview python.iml" filepath="$PROJECT_DIR$/.idea/Interview python.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Playwright-test.iml" filepath="$PROJECT_DIR$/.idea/Playwright-test.iml" />
+>>>>>>> 61b1ac2 (Initial commit)
+    </modules>
+  </component>
+</project>

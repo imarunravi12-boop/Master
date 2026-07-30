@@ -1,0 +1,86 @@
+Playwright Test runner 
+OOPS(classes, objects, inheritance, polymorphism, abstraction, encapsulation)Inheritance
+Polymorphism
+
+Test Annotations : Configure behavior of tests and test suites
+test.only -> Run only this test
+test.skip -> Skip this test 
+test.fail -> Mark test as expected to fail
+test.fixme -> Mark test as needing a fix
+test.use -> overide context
+test.info -> it shows additional information about the test
+test.describe -> Group tests together
+test.describe.parallel -> Run tests in the suite in parallel
+test.describe.serial -> Run tests in the suite serially
+test.beforeEach -> Run before each test in the suite
+test.afterEach -> Run after each test in the suite
+
+
+OOPS - object oriented programming system
+-> object
+javaScript -> prototype-based language
+-> Reusability
+-> Maintainability
+-> Modularity
+-> Scalability
+-> Readability
+-> Scalability
+-> Abstraction
+-> Encapsulation
+-> Inheritance
+-> Polymorphism
+
+Classes ->
+A class is a like tamplate or blueprint that defines the properties and behaviors of objects.
+
+* properties let name ="Arun"
+let name: string = "Arun"
+
+* methods launch browser(){
+   console.log("Browser launched");
+}
+
+* contractors - A constructor is a special method that is called when an object is instantiated from a class. It is used
+to initialize the object's properties and perform any setup required for the object to function properly.
+class Browser {
+  
+}
+
+// constructor - two types
+1. Default constructor - A default constructor is a constructor that does not take any parameters.
+{
+  console.log("Default constructor called");
+}
+2. Parameterized constructor - A parameterized constructor is a constructor that takes parameters.
+   constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+   }
+
+// this keyword - In TypeScript, the this keyword is used within a class to refer to the current instance of the class.
+this will refer to the current class and its properties and methods.
+1.default constructor()
+2.parameterized constructor(name:string, age:number)
+
+
+OOPS:
+1. Inheritance
+its relationship between classes where one class (child class or subclass)
+parent class and child class
+
+types of inheritance:
+1. single inheritance - when a class inherits from a single parent class.
+parent -> child
+2. multilevel inheritance - when a class inherits from a parent class, which in turn inherits from another parent class.
+grandparent -> parent -> child 
+3. hierarchical inheritance - when multiple classes inherit from a single parent class.
+browser -> chrome,browser -> firefox,browser -> edge
+
+typescript does not support: multiple inheritance - when a class inherits from multiple parent classes.
+
+keywords: extends 
+child extends parent -> works for inheritance
+
+parent extend child -> not works for inheritance
+
+

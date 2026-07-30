@@ -1,0 +1,35 @@
+import time
+
+def train_ticket_system():
+    cities = ["London", "Paris", "Berlin", "Tokyo", "New York"]
+    AUTHORIZED_USER = "traveler_01"
+    
+    print("🚉 --- TRAIN BOOKING COLLABORATOR --- 🚉")
+    time.sleep(0.5)
+    
+    # Step 1: Destination Selection
+    while True:
+        print(f"\nRoutes available: {', '.join(cities)}")
+        dest = input("Collaborator: Where are you traveling to? ").strip().title()
+        
+        if dest in cities:
+            print(f"Collaborator: ✅ Checking seats for {dest}... Available!")
+            break
+        else:
+            print(f"Collaborator: ❌ Sorry, we don't have a train to '{dest}'.")
+
+    # Step 2: Username Verification
+    while True:
+        user = input("\nCollaborator: Please enter your username to confirm: ").strip()
+        print("Collaborator: Verifying credentials...")
+        time.sleep(1)
+        
+        if user == AUTHORIZED_USER:
+            print(f"Collaborator: ✅ Access Granted. Welcome, {user}!")
+            print(f"\n" + "="*30 + f"\n🎟️  TICKET TO {dest.upper()}\nSTATUS: CONFIRMED\n" + "="*30)
+            break
+        else:
+            print(f"Collaborator: ❌ Wrong username. (Hint: traveler_01)")
+
+# Run the first scenario
+train_ticket_system()

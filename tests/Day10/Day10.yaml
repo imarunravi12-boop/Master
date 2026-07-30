@@ -1,0 +1,65 @@
+ - Data Parametrization - csv/json
+ - Classroom
+ - Data Parametrization - env/file
+ - Classroom
+
+Data Parametrization :
+* Data Driven Testing
+* run the same test logic over a whole set of different data inputs
+ - Coverage
+ - Maintainability
+ - Scalability
+ - Readability
+
+
+Csv- * comma separated values
+TestcaseID,Username,Password
+Tcoo1,admin,admin123
+Tcoo2,admin1,admin1234
+
+
+step1 ---> install csv-parse
+npm install csv-parse
+
+step2 ---> use parse() ---> imported from 'csv-parse/sync'
+parse(pathofthefile)
+
+step3 ---> install fs (file system) ---> to read the csv file
+npm install fs
+
+
+
+json- JavaScript Object Notation
+
+key-value pair
+single set data: {}
+{
+  username: "admin",
+  password: "admin123"
+  gender: "male"
+
+}
+
+multiple set data: [{}, {}]
+[
+  {
+    key: value,
+    username: "admin",
+    password: "admin123"  
+
+  },
+  {
+    key: value,
+    username1: "admin1",
+    password1: "admin1234"
+    }]
+
+  key value pair  
+
+
+env - environment file
+
+to read the data from .env file
+step1 ---> install dotenv
+npm install dotenv
+step2 ---> configure dotenv

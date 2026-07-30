@@ -1,0 +1,31 @@
+- Windows Handling
+- file upload & download
+- storage state
+
+
+file upload
+Automationg file upload throws web form is crucisal for many web applications. 
+
+// setting file on input element to simulate file upload
+await page.setInputFiles('#file-upload', 'path/to/file.txt');
+setInputFiles
+
+// interacting with file chooser dialog
+const [fileChooser] = await Promise.all([
+  page.waitForEvent('filechooser'),
+  page.click('#upload-button'), 
+  // button that triggers file selection
+]);
+
+
+storage state -- cookies
+    skip the login --> store the login info
+
+Classroom:
+use storage state for leaftaps applications(url,username,password,login,crmsfa,logout,close)
+
+use it in other test
+click on contacts
+click on create contact
+
+

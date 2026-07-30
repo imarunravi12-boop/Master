@@ -1,0 +1,46 @@
+-> String
+-> Functions
+-> Playwright Introduction 
+-> Browser Launch
+
+Functions:
+1.Named Function or Regular Function
+2.Arrow Function
+3.Call-Back Function
+
+Named Function:
+A function is a reusable block of code
+
+function session(name:string){
+console.log(name)
+}
+
+//call the function
+console.log(session("Playwright"))
+
+
+Arrow function:
+const variable =(input) => input
+
+Callback function:
+callback -> call one function to another function 
+agrs -> callback -> user define
+
+function a(name,b){ //function a("dilip",b)
+console.log(name)
+b(30) //b(30)
+}
+
+function b(age){
+console.log(age)
+}
+
+a("dilip",b)
+
+
+//to avoid the callback- hell -> Promise 
+-> resolve() -> when task succeeds
+-> reject() -> when task fails
+
+-> .then() -> handel succeeds
+-> .catch() -> handles error
